@@ -1,0 +1,31 @@
+body
+{
+	margin: 0;
+	display: flex;
+	min-height: 100vh;
+	background: #F5F5D0;
+}
+
+.contenedor{
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+}
+
+#slider{
+	width: 2000px;
+	height: 220px;
+	background-image: url(imagenes/largo.jpg);
+	background-size: 50% 100%;
+
+	animation: slider 50s infinite linear;
+	background-position: 100px;
+	background-repeat: repeat;
+}
+
+@keyframes slider{
+	to{
+		background-position: 10000px;
+
+	}
+}
